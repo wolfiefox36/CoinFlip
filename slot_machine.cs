@@ -5,7 +5,9 @@ public class slot_machine : MonoBehaviour {
     //public static Session_Monitor mon;
     
 	public static int[] tbl;
+	public int[] ptbl; // For the rates below!!!!!
 	public bool isBusy		= false;
+	public int Base_Payout		= 10; // Important in the math
 	
 	public int no_win_r 	= 25;		
 	public int one_r 		= 25+5;
@@ -28,7 +30,21 @@ public class slot_machine : MonoBehaviour {
 	public int inventory	= 500; //  coins
 	
 	void Start () {
-		
+	// Fill prob table
+	ptbl[0] = no_win_r;
+	ptbl[1] = one_r;
+	ptbl[0] = two_r ;
+	ptbl[0] = three_r ;
+	ptbl[0] = four_r ;
+	ptbl[0] = five_r ;
+	ptbl[0] = six_r ;
+	ptbl[7] = seven_r ;
+	ptbl[8] = eight_r;
+	ptbl[9] = nine_r;
+	ptbl[10] = ten_r;
+	ptbl[11] = elev_r;
+	
+	// Fill tbl
         if (tbl == null){
 			int i = 0;
 			tbl = new int[100];
@@ -85,17 +101,55 @@ public class slot_machine : MonoBehaviour {
     }
 	
 	bool Use(){
-		int x = (int)Random.value*100;
-	    int y = (int)Random.value*100;
-	    int z = (int)Random.value*100;
+		int x 		= (int)Random.value*100;
+	    int y 		= (int)Random.value*100;
+	    int z 		= (int)Random.value*100;
+	    int amt 		= -1; // Set at -1 for debuging reasons
 	    
 	    face1 = tbl[x];
 	    face2 = tbl[y];
 	    face3 = tbl[z];
 	    
-	    Debug.Log("Spin Results: " + x + y + z);
+	    amt = CheckForWin() // Face variables assumed to be set!!
+	    
+	    if ( amt > 0 ){
+	    	// WINNER
+	    	Debug.Log("Winner stub @@@WINNER");
+	    }else{
+	    	Debug.Log("Better luck next time!");
+	    }
+	    
+	    Debug.Log("Spin Results: " + x + y + z + "   PAYOUT: $" + amt);
 	}
 
+	int CheckForWin(){
+		bool ans = (face1 == face2 && face1==face3);
+		
+		if (ans){
+			// Winner
+			// (Rate Numerator) * (face number) * BasePay
+			int val = this.GetRateChange(face1) * (face1) * this.Base_Payout;
+			
+			return val
+		}else{
+			// Not Winner
+			return 0;
+		}
+	}
+
+	int GetRateChange(int n){
+		// Simple subtraction
+		if ( n == 0 ){
+			return 0;
+		}
+		
+		if ( n == 1 ){
+			// Just whatever number
+			return ptbl[1];
+		}
+		return ptbl[n]-ptbl[n-1];
+	}
+	
     void OnTriggerEnter2D(Collider2D coll)
     {
         
