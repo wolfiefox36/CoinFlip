@@ -1,0 +1,12 @@
+c:\users\alex\documents\visual studio 2015\Projects\Roulette\Roulette\bin\Debug\Roulette.exe.config
+c:\users\alex\documents\visual studio 2015\Projects\Roulette\Roulette\bin\Debug\Roulette.exe
+c:\users\alex\documents\visual studio 2015\Projects\Roulette\Roulette\bin\Debug\Roulette.pdb
+c:\users\alex\documents\visual studio 2015\Projects\Roulette\Roulette\obj\Debug\Roulette.csprojResolveAssemblyReference.cache
+c:\users\alex\documents\visual studio 2015\Projects\Roulette\Roulette\obj\Debug\Roulette.exe
+c:\users\alex\documents\visual studio 2015\Projects\Roulette\Roulette\obj\Debug\Roulette.pdb
+C:\Users\alex\Downloads\Roulette\Roulette\bin\Debug\Roulette.exe.config
+C:\Users\alex\Downloads\Roulette\Roulette\obj\Debug\Roulette.exe
+C:\Users\alex\Downloads\Roulette\Roulette\obj\Debug\Roulette.pdb
+C:\Users\alex\Downloads\Roulette\Roulette\bin\Debug\Roulette.exe
+C:\Users\alex\Downloads\Roulette\Roulette\bin\Debug\Roulette.pdb
+C:\Users\alex\Downloads\Roulette\Roulette\obj\Debug\Roulette.csprojResolveAssemblyReference.cache
