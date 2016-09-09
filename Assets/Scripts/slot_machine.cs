@@ -130,7 +130,7 @@ public class slot_machine : MonoBehaviour {
 			// (Rate Numerator) * (face number) * BasePay
 			int val = this.GetRateChange(face1) * (face1) * this.Base_Payout;
 			
-			return val
+			return val;
 		}else{
 			// Not Winner
 			return 0;
