@@ -76,7 +76,7 @@ public class slot_machine : MonoBehaviour {
 				}else if (i <= eight_r){
 					ans = 8;
 				}else if (i <= nine_r){
-					ans = 9; button press
+					ans = 9;
 				}else if (i <= ten_r){
 					ans = 10;
 				}else if (i <= elev_r){
@@ -89,11 +89,7 @@ public class slot_machine : MonoBehaviour {
         
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	    
-    
-	}
+
 	
 	void OnMouseUp() {
         Debug.Log("Starting a spin");
@@ -104,22 +100,26 @@ public class slot_machine : MonoBehaviour {
 		int x 		= (int)Random.value*100;
 	    int y 		= (int)Random.value*100;
 	    int z 		= (int)Random.value*100;
-	    int amt 		= -1; // Set at -1 for debuging reasons
+	    int amt 	= -1; // Set at -1 for debuging reasons
+        bool ans    = false;
 	    
 	    face1 = tbl[x];
 	    face2 = tbl[y];
 	    face3 = tbl[z];
-	    
-	    amt = CheckForWin() // Face variables assumed to be set!!
+
+        amt = CheckForWin(); // Face variables assumed to be set!!
 	    
 	    if ( amt > 0 ){
 	    	// WINNER
 	    	Debug.Log("Winner stub @@@WINNER");
+            ans = true;
 	    }else{
 	    	Debug.Log("Better luck next time!");
 	    }
 	    
 	    Debug.Log("Spin Results: " + x + y + z + "   PAYOUT: $" + amt);
+
+        return ans;
 	}
 
 	int CheckForWin(){
@@ -130,7 +130,7 @@ public class slot_machine : MonoBehaviour {
 			// (Rate Numerator) * (face number) * BasePay
 			int val = this.GetRateChange(face1) * (face1) * this.Base_Payout;
 			
-			return val
+			return val;
 		}else{
 			// Not Winner
 			return 0;
@@ -150,9 +150,4 @@ public class slot_machine : MonoBehaviour {
 		return ptbl[n]-ptbl[n-1];
 	}
 	
-    void OnTriggerEnter2D(Collider2D coll)
-    {
-        
-    }
-
 }
