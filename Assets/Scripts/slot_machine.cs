@@ -8,8 +8,12 @@ public class slot_machine : MonoBehaviour {
 	public int[] ptbl; // For the rates below!!!!!
 	public bool isBusy		= false;
 	public int Base_Payout		= 10; // Important in the math
-	
-	public int no_win_r 	= 25;		
+
+    public SpriteRenderer Sprite_X = null;
+    public Sprite Sprite_Y = null;
+    public Sprite Sprite_Z = null;
+
+    public int no_win_r 	= 25;		
 	public int one_r 		= 25+5;
 	public int two_r 		= 30+5;
 	public int three_r 		= 35+5;
@@ -30,6 +34,10 @@ public class slot_machine : MonoBehaviour {
 	public int inventory	= 500; //  coins
 	
 	void Start () {
+
+    ptbl = new int[12];
+
+
 	// Fill prob table
 	ptbl[0] = no_win_r;
 	ptbl[1] = one_r;
@@ -45,63 +53,54 @@ public class slot_machine : MonoBehaviour {
 	ptbl[11] = elev_r;
 	
 	// Fill tbl
-        if (tbl == null){
-			int i = 0;
-			tbl = new int[100];
-			
-			
-			
-			// Fill the table with results
-			// 12 symbols, 8.3 each
-			
-			for (;i < 100; i++){
-				int ans = -1;
+
+		int i = 0;
+		tbl = new int[100];
+        //Sprite_X
+
+
+        // Fill the table with results
+        // 12 symbols, 8.3 each
+
+        for (i = 0;i < 100; i++){
+			int ans = -1;
 				
-				if (i <= no_win_r){ // 25
-					ans = 0;
-				}else if (i <= one_r){ // 12
-					ans = 1;
-				}else if (i <= two_r){//5
-					ans = 2;
-				}else if (i <= three_r){
-					ans = 3;
-				}else if (i <= four_r){
-					ans = 4;
-				}else if (i <= five_r){
-					ans = 5;
-				}else if (i <= six_r){
-					ans = 6;
-				}else if (i <= seven_r){
-					ans = 7;
-				}else if (i <= eight_r){
-					ans = 8;
-				}else if (i <= nine_r){
-					ans = 9;
-				}else if (i <= ten_r){
-					ans = 10;
-				}else if (i <= elev_r){
-					ans = 11;
-				}
-				// Fill area
-				tbl[i] = ans;
+			if (i <= no_win_r){ // 25
+				ans = 0;
+			}else if (i <= one_r){ // 12
+				ans = 1;
+			}else if (i <= two_r){//5
+				ans = 2;
+			}else if (i <= three_r){
+				ans = 3;
+			}else if (i <= four_r){
+				ans = 4;
+			}else if (i <= five_r){
+				ans = 5;
+			}else if (i <= six_r){
+				ans = 6;
+			}else if (i <= seven_r){
+				ans = 7;
+			}else if (i <= eight_r){
+				ans = 8;
+			}else if (i <= nine_r){
+				ans = 9;
+			}else if (i <= ten_r){
+				ans = 10;
+			}else if (i <= elev_r){
+				ans = 11;
 			}
-        }
-        
+			// Fill area
+			tbl[i] = ans;
+		}
 	}
 	
-
-	
-	void OnMouseUp() {
-        Debug.Log("Starting a spin");
-        this.Use();
-    }
-	
-	bool Use(){
+	public void Use(){
 		int x 		= (int)Random.value*100;
 	    int y 		= (int)Random.value*100;
 	    int z 		= (int)Random.value*100;
 	    int amt 	= -1; // Set at -1 for debuging reasons
-        bool ans    = false;
+        //bool ans    = false;
 	    
 	    face1 = tbl[x];
 	    face2 = tbl[y];
@@ -112,14 +111,14 @@ public class slot_machine : MonoBehaviour {
 	    if ( amt > 0 ){
 	    	// WINNER
 	    	Debug.Log("Winner stub @@@WINNER");
-            ans = true;
+            //ans = true;
 	    }else{
 	    	Debug.Log("Better luck next time!");
 	    }
 	    
 	    Debug.Log("Spin Results: " + x + y + z + "   PAYOUT: $" + amt);
 
-        return ans;
+       // return ans;
 	}
 
 	int CheckForWin(){
