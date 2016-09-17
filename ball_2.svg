@@ -49,10 +49,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-215.49689"
-     inkscape:cy="985.87217"
+     inkscape:cx="126.7604"
+     inkscape:cy="871.58646"
      inkscape:document-units="px"
-     inkscape:current-layer="g36239"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1536"
      inkscape:window-height="801"
@@ -72,16 +72,31 @@
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="white circle"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <ellipse
+       ry="323.10928"
+       rx="332.21094"
+       cy="523.79083"
+       cx="391.42853"
+       id="ellipse36241-8"
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:11.14954567;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
      id="g36239"
      inkscape:groupmode="layer"
      inkscape:label="ball gradient"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <ellipse
        ry="323.10928"
        rx="332.21094"
        cy="523.79077"
        cx="391.42856"
        id="ellipse36241"
-       style="fill:url(#linearGradient36257);fill-opacity:1;stroke:none;stroke-width:11.14954567;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-rule:nonzero" />
+       style="fill:url(#linearGradient36257);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:11.14954567;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>
