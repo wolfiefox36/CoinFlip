@@ -16,7 +16,7 @@
    id="svg35684"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="ball2.svg">
+   sodipodi:docname="ball_2.svg">
   <defs
      id="defs35686">
     <linearGradient
@@ -27,7 +27,7 @@
          offset="0"
          id="stop36253" />
       <stop
-         style="stop-color:#a57b00;stop-opacity:0;"
+         style="stop-color:#ffffff;stop-opacity:0"
          offset="1"
          id="stop36255" />
     </linearGradient>
@@ -35,8 +35,8 @@
        inkscape:collect="always"
        xlink:href="#linearGradient36251"
        id="linearGradient36257"
-       x1="642.85712"
-       y1="763.79077"
+       x1="528.57141"
+       y1="620.93365"
        x2="-791.42859"
        y2="-744.78064"
        gradientUnits="userSpaceOnUse" />
@@ -49,8 +49,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-313.57143"
-     inkscape:cy="643.01503"
+     inkscape:cx="-215.49689"
+     inkscape:cy="985.87217"
      inkscape:document-units="px"
      inkscape:current-layer="g36239"
      showgrid="false"
@@ -67,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -75,7 +75,6 @@
      id="g36239"
      inkscape:groupmode="layer"
      inkscape:label="ball gradient"
-     sodipodi:insensitive="true"
      style="display:inline">
     <ellipse
        ry="323.10928"
@@ -83,6 +82,6 @@
        cy="523.79077"
        cx="391.42856"
        id="ellipse36241"
-       style="fill:url(#linearGradient36257);fill-opacity:1;stroke:none;stroke-width:11.14954567;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:url(#linearGradient36257);fill-opacity:1;stroke:none;stroke-width:11.14954567;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-rule:nonzero" />
   </g>
 </svg>
