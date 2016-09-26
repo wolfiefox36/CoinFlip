@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg4237"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="door_and_exit.svg">
+  <defs
+     id="defs4239" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.51"
+     inkscape:cx="-50.35014"
+     inkscape:cy="760.7172"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer8"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4242">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g4793"
+     inkscape:groupmode="layer"
+     inkscape:label="door copy">
+    <rect
+       y="219.1823"
+       x="117.51481"
+       height="820.02063"
+       width="553.61877"
+       id="rect4795"
+       style="fill:#5b3100;fill-opacity:1;stroke:none;stroke-width:18.29999924;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:label="door"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="fill:#835219;fill-opacity:1;stroke:none;stroke-width:18.29999924;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4785"
+       width="549.41241"
+       height="813.8902"
+       x="127.73046"
+       y="214.79382"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:label="knob copy"
+     id="g4797"
+     inkscape:groupmode="layer">
+    <ellipse
+       ry="36.737026"
+       rx="37.810349"
+       cy="598.63104"
+       cx="592.52161"
+       id="ellipse4799"
+       style="fill:#d7ae00;fill-opacity:1;stroke:none;stroke-width:18.29999924;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="knob"
+     style="display:inline">
+    <ellipse
+       style="fill:#ffcf00;fill-opacity:1;stroke:none;stroke-width:18.29999924;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4788"
+       cx="594.60785"
+       cy="596.60406"
+       rx="35.724125"
+       ry="34.710026"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="shine">
+    <ellipse
+       style="fill:#ffde4d;fill-opacity:1;stroke:none;stroke-width:18.29999924;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4791"
+       cx="605.65991"
+       cy="585.2251"
+       rx="11.069448"
+       ry="7.72083"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Exit">
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#8f0f00;stroke-width:7.68989754;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4700-9"
+       width="269.85162"
+       height="147.51225"
+       x="259.34204"
+       y="48.69939"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#df1700;stroke-width:7.58605099;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4700"
+       width="267.93332"
+       height="144.58289"
+       x="265.86209"
+       y="46.119797"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <flowRoot
+       transform="matrix(0.58501061,0,0,0.59904709,255.44751,-55.134739)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended';letter-spacing:0px;word-spacing:0px;display:inline;fill:#8f0f00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4221"
+       xml:space="preserve"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion4223"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended';fill:#8f0f00;fill-opacity:1"
+           y="171.8744"
+           x="68.292686"
+           height="246.34146"
+           width="539.02441"
+           id="rect4225" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;font-family:'Nirmala UI';-inkscape-font-specification:'Nirmala UI';fill:#8f0f00;fill-opacity:1"
+         id="flowPara4227">EXIT</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4711"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended';letter-spacing:0px;word-spacing:0px;display:inline;fill:#df1700;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.58501061,0,0,0.59904709,260.50285,-55.134739)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion4713"><rect
+           id="rect4715"
+           width="539.02441"
+           height="246.34146"
+           x="68.292686"
+           y="171.8744"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended';fill:#df1700;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara4717"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;font-family:'Nirmala UI';-inkscape-font-specification:'Nirmala UI';fill:#df1700;fill-opacity:1">EXIT</flowPara></flowRoot>  </g>
+</svg>
