@@ -6,7 +6,7 @@ public class slot_machine : MonoBehaviour {
     
 	public static int[] tbl;
 	public int[] ptbl; // For the rates below!!!!!
-    public Sprite[] itbl; // For sprit3s
+    public Sprite[] itbl = new Sprite[14]; // For sprit3s
 
 	public bool isBusy		= false;
 	public int Base_Payout		= 10; // Important in the math
@@ -28,6 +28,9 @@ public class slot_machine : MonoBehaviour {
 	public int nine_r 		= 65+5;
 	public int ten_r 		= 70+5;
 	public int elev_r 		= 75+5;
+
+    protected Time StopRoll = null;
+    private bool Roll_Occ   = true;
 	
 	int face1				= 0;
 	int face2				= 0;
@@ -55,7 +58,8 @@ public class slot_machine : MonoBehaviour {
 	ptbl[11] = elev_r;
 
     //itbl[0] = 
-	
+	//itbl[0] = 
+    
 	// Fill tbl
 
 		int i = 0;
@@ -103,16 +107,49 @@ public class slot_machine : MonoBehaviour {
     
 	}
 	
-	public void Use(){
-		int x 		= (int)Random.value*100;
-	    int y 		= (int)Random.value*100;
-	    int z 		= (int)Random.value*100;
-	    int amt 	= -1; // Set at -1 for debuging reasons
-        //bool ans    = false;
-	    
-	    face1 = tbl[x];
-	    face2 = tbl[y];
-	    face3 = tbl[z];
+    void fixedUpdate()
+    {
+        if (!this.isBusy) { return; } // Do nothing 
+
+
+            if (this.StopRoll.Equals( System.DateTime.Now ))
+        {
+            // Turn off busy and Run()
+            this.isBusy = false;
+            this.Use();
+            return;
+        }
+
+        Sprite ans;
+
+        // For the spin
+        if (Roll_Occ)
+        {
+            ans = itbl[13];
+            Roll_Occ = !Roll_Occ;
+        }
+        else
+        {
+            ans = itbl[14];
+            Roll_Occ = !Roll_Occ;
+        }
+
+        this.Sprite_X.sprite = ans;
+        this.Sprite_Y.sprite = ans;
+        this.Sprite_Z.sprite = ans;
+    }
+
+    protected void FinishUse()
+    {
+        int x = (int)Random.value * 100;
+        int y = (int)Random.value * 100;
+        int z = (int)Random.value * 100;
+        int amt = -1; // Set at -1 for debuging reasons
+                      //bool ans    = false;
+
+        face1 = tbl[x];
+        face2 = tbl[y];
+        face3 = tbl[z];
 
         // Set the IMG
         this.Sprite_X.sprite = itbl[face1];
@@ -120,19 +157,27 @@ public class slot_machine : MonoBehaviour {
         this.Sprite_Z.sprite = itbl[face3];
 
         amt = CheckForWin(); // Face variables assumed to be set!!
-	    
-	    if ( amt > 0 ){
-	    	// WINNER
-	    	Debug.Log("Winner stub @@@WINNER");
-            //ans = true;
-	    }else{
-	    	Debug.Log("Better luck next time!");
-	    }
-	    
-	    Debug.Log("Spin Results: " + x + y + z + "   PAYOUT: $" + amt);
 
-       // return ans;
-	}
+        if (amt > 0)
+        {
+            // WINNER
+            Debug.Log("Winner stub @@@WINNER");
+            //ans = true;
+        }
+        else {
+            Debug.Log("Better luck next time!");
+        }
+
+        Debug.Log("Spin Results: " + x + y + z + "   PAYOUT: $" + amt);
+
+        // return ans;
+    }
+
+    public void Use(){
+        this.isBusy = true;
+        StopRoll = System.DateTime.Now + 
+        // See Fixed Update
+    }
 
 	int CheckForWin(){
 		bool ans = (face1 == face2 && face1==face3);
