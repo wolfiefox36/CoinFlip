@@ -175,7 +175,7 @@ public class slot_machine : MonoBehaviour {
 
     public void Use(){
         this.isBusy = true;
-        StopRoll = System.DateTime.Now + 
+        StopRoll = System.DateTime.Now.AddSeconds(30.0);
         // See Fixed Update
     }
 
